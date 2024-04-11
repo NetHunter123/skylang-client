@@ -1,0 +1,54 @@
+.logo {
+    &__root {
+        /*background-color: #e3e3e3;*/
+        background-color: var(--primary-50-c);
+
+        color: var(--bg-200-c);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        font-size: 30px;
+        padding: 10px 15px;
+        border-radius: 15px;
+        text-transform: uppercase;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        max-height: 60px;
+        min-height: 60px;
+        min-width: 242px;
+    }
+
+    &__icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        margin-right: 10px;
+        color:var(--primary-200-c);
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__name {
+        letter-spacing: 3px;
+        line-height: 26px;
+        &_accent {
+            color:var(--primary-200-c);
+        }
+    }
+
+    &__motto {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0px;
+    }
+}
