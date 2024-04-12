@@ -9,8 +9,8 @@ import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 
 const EmblaCarousel = (props) => {
-	const { slides, options } = props
-	const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()])
+	const { slides, options,autoplayOptions={} } = props
+	const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay(autoplayOptions)])
 	
 	const onNavButtonClick = useCallback((emblaApi) => {
 		const autoplay = emblaApi?.plugins()?.autoplay

@@ -1,5 +1,5 @@
 import Header from "@/components/modules/Header/Header";
-import Footer from "@/components/modules/Footer.jsx/Footer";
+import Footer from "@/components/modules/Footer/Footer";
 import styles from './main-layout.module.css'
 import {MantineProvider} from "@mantine/core";
 

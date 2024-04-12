@@ -3,6 +3,10 @@ import Image from "next/image";
 import MainLayout from "@/components/layout/MainLayout";
 import {Button} from "@mantine/core";
 import MainHero from "@/components/modules/MainHero.jsx/MainHero";
+import AboutSection from "@/components/modules/AboutSection/AboutSection";
+import StatsSection from "@/components/modules/StatsSection/StatsSection";
+import BannerFreeLesson from "@/components/modules/BannerFreeLesson/BannerFreeLesson";
+import SmallGuide from "@/components/modules/SmallGuide/SmallGuide";
 
 function Home() {
 	return (
@@ -17,6 +21,12 @@ function Home() {
 				{/*<h1>Test</h1>*/}
 				{/*<Button>Test</Button>*/}
 				<MainHero/>
+				<div className="">
+					<AboutSection/>
+				</div>
+				<BannerFreeLesson/>
+				<SmallGuide/>
+				<StatsSection/>
 			</main>
 		</>
 	);

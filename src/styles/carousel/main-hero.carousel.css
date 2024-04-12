@@ -1,0 +1,32 @@
+.mainHero__root {
+    .embla__controls {
+    }
+
+    .embla__buttons {
+        @media screen and (max-width: 950px) {
+            bottom: 20px;
+        }
+        @media screen and (max-width: 654px) {
+            left: 20px;
+        }
+    }
+
+    .embla__dots {
+
+    }
+
+    .embla__dot {
+
+    }
+
+    .embla__dot:after {
+
+    }
+
+    .embla__dot--selected:after {
+    }
+
+}
+
+
+

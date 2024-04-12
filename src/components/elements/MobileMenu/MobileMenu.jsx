@@ -11,13 +11,13 @@ const MobileMenu = () => {
 			<Drawer
 				opened={opened}
 				onClose={toggle}
-				title="menu"
-				closeButtonProps={{icon: <IoCloseSharp size={30} color={"#ffffff"}/>}}
+				title="Navigation"
+				closeButtonProps={{icon: <IoCloseSharp size={30} color={"var(--primary-50-c)"}/>}}
 			>
 				{/* Drawer content */}
 			</Drawer>
 			
-			<Burger  size="md" opened={opened}  onClick={toggle} aria-label="Toggle navigation"/>
+			<Burger size="md" opened={opened} color={"white"}  onClick={toggle} aria-label="Toggle navigation"/>
 		</>
 	);
 };

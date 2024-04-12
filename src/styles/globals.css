@@ -1,5 +1,6 @@
 @import "@mantine/core/styles.css";
-@import "embla.css";
+@import "carousel/embla.css";
+@import "carousel/main-hero.carousel.css";
 @import "reset.css";
 
 
@@ -38,22 +39,25 @@
 :root {
     --max-width: 1280px;
 
-    --primary-50-c:#1F308FFF;
-    --accent-50-c: #9ba7ec;
-
+    --primary-50-c: #1F308FFF;
     --primary-100-c: #3F51B5;
-    --primary-200-c:#757de8;
-    --primary-300-c:#dedeff;
-    --accent-100-c:#2196F3;
-    --accent-200-c:#003f8f;
-    --text-100-c:#333333;
-    --text-200-c:#5c5c5c;
-    --text-white:#fff;
-    --bg-100-c:#fffefb;
-    --bg-200-c:#f5f5f5;
+    --primary-200-c: #757de8;
+    --primary-300-c: #dedeff;
+
+    --accent-c: #b3edf9;
+    --accent-50-c: #9ba7ec;
+    --accent-100-c: #2196F3;
+    --accent-200-c: #003f8f;
+
+    --text-100-c: #333333;
+    --text-200-c: #5c5c5c;
+    --text-white: #fff;
+
+    --bg-100-c: #fffefb;
+    --bg-200-c: #f5f5f5;
     --bg-250-c: #e3e3e3;
-    --bg-300-c:#cccccc;
-    --bg-400-c:#c3c3c3;
+    --bg-300-c: #cccccc;
+    --bg-400-c: #c3c3c3;
 
     --border-color-c: var(--bg-300-c);
 
@@ -109,14 +113,15 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
-    //max-width: 100vw;
-    //overflow-x: hidden;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-
 }
 
 body {
@@ -136,17 +141,39 @@ a {
     visibility: hidden;
 }
 
-.mantine-Burger-root{
+.section-c {
+    padding: 60px 10px;
+}
+
+.container-c {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.section_title {
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 35px;
+
+    @media screen and (max-width: 950px) {
+        font-size: 38px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 34px;
+    }
+}
+
+.mantine-Burger-root {
     background-color: var(--primary-50-c);
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45px;
-    width: 45px;
+    height: 55px;
+    width: 55px;
 }
 
-.mantine-Burger-burger{
+.mantine-Burger-burger {
 
 }
 
